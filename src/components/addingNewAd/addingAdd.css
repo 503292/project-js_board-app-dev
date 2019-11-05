@@ -1,0 +1,61 @@
+.adForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+.adForm h3 {
+  text-align: center;
+}
+.adForm input,
+.adForm select,
+.adForm textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+.adForm button {
+  background-color: #2b5577;
+  padding: 12px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.adForm button {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color:#497eaa;
+  padding: 10px 0;
+}
+
+.adForm button:hover,
+.adForm button:focus  {
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 164, 23);
+}
+
+
+.adForm label {
+  margin-bottom: 5px;
+}
+.adForm textarea {
+  height: 5rem;
+}
+.basicLightbox__placeholder {
+  max-height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.adForm .thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.adForm .thumb:not(:last-of-type) {
+  margin-right: 10px;
+}

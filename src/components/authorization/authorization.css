@@ -1,0 +1,156 @@
+.login-widows {
+  width: 300px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.login-widows form{
+display: none;
+}
+.wraper-login {
+  display: flex;
+  margin: -15px -15px 40px -15px;
+  border-bottom: 2px solid rgb(240, 164, 23);
+}
+
+.wraper-login button {
+  flex: 1 0 50%;
+  background: grey;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.wraper-login button:focus {
+  background-color: rgb(122, 113, 113);
+  outline: 1px solid #2a8d9e
+}
+
+.wraper-login button:hover {
+  background-color: rgb(122, 113, 113);
+}
+
+.wraper-login .activ-btn {
+  color: white;
+  background-color: #497eaa;
+}
+
+.wraper-login .activ-btn:hover,
+.wraper-login .activ-btn:focus {
+  background-color: rgb(45, 88, 124);
+}
+
+.form_sedn_btn1,
+.form_sedn_btn2 {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color:#497eaa;
+  padding: 10px 0;
+}
+
+.form_sedn_btn1:hover,
+.form_sedn_btn2:hover,
+.form_sedn_btn1:focus,
+.form_sedn_btn2:focus  {
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 164, 23);
+}
+
+.signIn-form,
+.registration-form {
+  flex-direction: column;
+}
+
+.login-widows .activ-form {
+  display: flex;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+  .login-widows {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width:1200px) {}
+
+.group {
+  overflow: hidden;
+  position: relative;
+}
+ 
+.login-widows label {
+  position: absolute;
+  top: 28px;
+  color: darkgrey;
+  font-family: 'PT Sans', sans-serif;
+  cursor: text;
+  transition: 0.25s ease;
+  padding-bottom: 20px;
+}
+
+.login-widows input {
+  display: block;
+  width: 100%;
+  padding-top: 26px;
+  border: none;
+  border-bottom: 1px solid darkgrey;
+  border-radius: 0;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.login-widows input:valid~label {
+  top: 0;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-widows input:focus {
+  outline: none;
+}
+
+.login-widows input:focus~label {
+  top: 0;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  color: #000000;
+}
+
+.login-widows input:focus~.bar:before {
+  transform: translateX(0);
+}
+
+
+.bar {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  height: 4px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #5db4c0;
+  transform: translateX(-100%);
+}
+
+.wrapinput {
+  margin-bottom: 50px;
+}
+
+.registration-form input:focus {
+  border-bottom: 1px solid black;
+}
